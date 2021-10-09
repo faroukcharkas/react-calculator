@@ -28,19 +28,20 @@ body {
   max-width: 266.664px;
   background-color: var(--light);
   border-radius: 32px;
-  overflow: hidden;
+  word-wrap: break-word;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   padding: 0;
 }
 
 .display {
-  padding: -25px;
+  padding: 25px;
   text-align: right;
+  vertical-align: bottom;
   background-color: var(--dark);
   color: #000;
-  font-size: 25px;
+  font-size: 30px;
+  overflow: visible;
   font-weight: 300;
-  height: 100px;
   border-radius: 32px 32px 0px 0px;
 }
 
@@ -66,6 +67,14 @@ button:hover {
 
 .operators {
   display: flex;
+}
+
+.--left-corner {
+  border-bottom-left-radius: 32px;
+}
+
+.--right-corner {
+  border-bottom-right-radius: 32px;
 }
 
 .operators button {
